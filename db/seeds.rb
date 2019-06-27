@@ -30,3 +30,21 @@ students = Student.create(
     }
   ]
 )
+
+courses = Course.create([
+  {
+    short_name: "CS111",
+    name: "Intro to Computer Science",
+    description: "Lorem ipsum dolor amet slow-carb austin coloring book cliche dreamcatcher plaid pabst next level bitters DIY gluten-free hot chicken shaman keffiyeh green juice. Thundercats hot chicken kale chips snackwave, slow-carb art party vegan YOLO sustainable etsy. XOXO quinoa kogi, small batch cliche meggings pop-up selvage portland skateboard ethical flannel. Gochujang snackwave street art, taxidermy succulents beard bushwick."
+  },
+  {
+    short_name: "CS112",
+    name: "Data Structure",
+    description: "Lorem ipsum dolor amet slow-carb austin coloring book cliche dreamcatcher plaid pabst next level bitters DIY gluten-free hot chicken shaman keffiyeh green juice. Thundercats hot chicken kale chips snackwave, slow-carb art party vegan YOLO sustainable etsy. XOXO quinoa kogi, small batch cliche meggings pop-up selvage portland skateboard ethical flannel. Gochujang snackwave street art, taxidermy succulents beard bushwick."
+  },
+  {
+    short_name: "CS211",
+    name: "Computer Netwroking Information",
+    description: "Lorem ipsum dolor amet slow-carb austin coloring book cliche dreamcatcher plaid pabst next level bitters DIY gluten-free hot chicken shaman keffiyeh green juice. Thundercats hot chicken kale chips snackwave, slow-carb art party vegan YOLO sustainable etsy. XOXO quinoa kogi, small batch cliche meggings pop-up selvage portland skateboard ethical flannel. Gochujang snackwave street art, taxidermy succulents beard bushwick."
+  },
+])
