@@ -1,25 +1,31 @@
 <header>
   <ul id="dropdown1" class="dropdown-content">
     <li><%= session_link %></li>
-    <li><a href="#!">two</a></li>
-    <li><a href="#!">three</a></li>
+    <% if logged_in? %>
+      <li><%= link_to "View your profile", student_path(current_user) %></li>
+    <% else %>
+      <li><%= link_to "Register", new_student_path %></li>
+    <% end %>
   </ul>
   <ul id="dropdown2" class="dropdown-content">
     <li><%= session_link %></li>
-    <li><a href="#!">two</a></li>
-    <li><a href="#!">three</a></li>
+    <% if logged_in? %>
+      <li><%= link_to "View your profile", student_path(current_user) %></li>
+      <% else %>
+      <li><%= link_to "Register", new_student_path %></li>
+    <% end %>
   </ul>
   <nav>
     <div class="container">
       <div class="nav-wrapper">
         <%= link_to "Tech University", root_path, class:"brand-logo right" %>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i>Accounting</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i>Account</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><%= link_to "Courses", root_path %></li>
           <% if logged_in? %>
             <li><%= link_to "Students", students_path %></li>
           <% end %>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Accounting<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
         <ul class="sidenav" id="mobile-demo">
           <li><%= link_to "Courses", root_path %></li>
